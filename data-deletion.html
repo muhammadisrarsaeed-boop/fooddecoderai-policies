@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion — Food Decoder AI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .step-list { counter-reset: steps; list-style: none; padding: 0; }
+    .step-list li {
+      counter-increment: steps;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .step-list li::before {
+      content: counter(steps);
+      background: var(--orange);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+    .step-list li strong { display: block; font-size: 16px; margin-bottom: 4px; }
+    .step-list li p { margin: 0; color: var(--muted); font-size: 15px; }
+    .delete-hero {
+      background: linear-gradient(135deg, #B91C1C, #DC2626);
+      border-radius: 16px;
+      color: white;
+      padding: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .delete-hero .icon { font-size: 48px; margin-bottom: 12px; }
+    .delete-hero h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .delete-hero p { color: rgba(255,255,255,0.8); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-icon">🍽️</div>
+      <span>Food Decoder AI</span>
+    </a>
+    <div class="nav-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="data-deletion.html">Data Deletion</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="badge">Your Rights</div>
+  <h1>Account &amp; Data Deletion</h1>
+  <p>You have the right to permanently delete your account and all associated data from Food Decoder AI at any time.</p>
+  <div class="last-updated">Last Updated: May 22, 2025</div>
+</div>
+
+<div class="content">
+
+  <div class="delete-hero">
+    <div class="icon">🗑️</div>
+    <h3>We respect your right to be forgotten</h3>
+    <p>Deleting your account permanently removes all your personal data from our servers. This action is irreversible.</p>
+  </div>
+
+  <!-- In-app deletion -->
+  <div class="section" id="in-app">
+    <h2><span class="icon">📱</span> Method 1: Delete Account In-App (Recommended)</h2>
+    <p>The fastest way to delete your account and all data is directly within the app:</p>
+
+    <ol class="step-list">
+      <li>
+        <div>
+          <strong>Open Food Decoder AI</strong>
+          <p>Launch the app on your Android device and make sure you are logged in to the account you want to delete.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Go to Settings</strong>
+          <p>Tap the <strong>Settings</strong> icon in the bottom navigation bar (gear icon).</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Scroll to Delete Account</strong>
+          <p>Scroll to the bottom of the Settings page and tap the red <strong>"Delete Account"</strong> button.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Confirm Deletion</strong>
+          <p>A confirmation dialog will appear. Read the warning carefully and tap <strong>"Delete"</strong> to confirm. This action cannot be undone.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Done — Your Data is Deleted</strong>
+          <p>Your account and all associated data will be immediately deleted from our servers. You will be returned to the login screen.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Email deletion -->
+  <div class="section" id="email-request">
+    <h2><span class="icon">📧</span> Method 2: Request Deletion by Email</h2>
+    <p>If you cannot access the app (e.g., you lost your device or forgot your credentials), you can request deletion by email:</p>
+
+    <ol class="step-list">
+      <li>
+        <div>
+          <strong>Send an email to us</strong>
+          <p>Email us at <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a> with the subject line: <strong>"Data Deletion Request"</strong></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Include your account information</strong>
+          <p>In your email, include: your registered email address, the name you used when signing up, and a brief note confirming you want to permanently delete your account.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>We will verify and process your request</strong>
+          <p>We will respond within <strong>72 hours</strong> to confirm your identity and initiate the deletion process.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Deletion confirmed</strong>
+          <p>We will send a confirmation email once your account and all associated data have been deleted, within <strong>30 days</strong> of receiving your request.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- What gets deleted -->
+  <div class="section" id="what-deleted">
+    <h2><span class="icon">📋</span> What Data Gets Deleted</h2>
+    <p>When you delete your account (by either method), the following data is <strong>permanently and irreversibly deleted</strong>:</p>
+
+    <table>
+      <tr><th>Data Type</th><th>Location</th><th>Deleted?</th><th>Timing</th></tr>
+      <tr><td>Account profile (email, name, photo URL)</td><td>Firebase Firestore</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Saved favourite recipes</td><td>Firebase Firestore</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Scan history</td><td>Firebase Firestore</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Firebase Auth account</td><td>Firebase Authentication</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Shopping list</td><td>Local device</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Meal plans</td><td>Local device</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Fridge / Pantry inventory</td><td>Local device</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>App preferences &amp; settings</td><td>Local device</td><td>✅ Yes</td><td>Immediately</td></tr>
+      <tr><td>Crash reports</td><td>Firebase Crashlytics</td><td>✅ Yes</td><td>Within 30 days</td></tr>
+      <tr><td>Analytics events</td><td>Firebase Analytics</td><td>⚠️ Anonymised</td><td>Events are anonymous and cannot be linked to you after account deletion</td></tr>
+      <tr><td>Subscription purchase records</td><td>Google Play Store</td><td>⚠️ Not ours to delete</td><td>Managed by Google — see Google's data deletion policy</td></tr>
+    </table>
+
+    <div class="card warning">
+      <strong>Important:</strong> Deletion is <strong>permanent and irreversible</strong>. Once deleted, your account, saved recipes, favourites, and history cannot be recovered. If you have an active subscription, cancelling your subscription is a separate step (see below).
+    </div>
+  </div>
+
+  <!-- Subscription cancellation -->
+  <div class="section" id="subscription-cancel">
+    <h2><span class="icon">💳</span> Cancel Your Subscription Before Deleting</h2>
+    <p>Deleting your account does <strong>not</strong> automatically cancel your Google Play subscription. You must cancel it separately to avoid future charges:</p>
+
+    <ol class="step-list">
+      <li>
+        <div>
+          <strong>Open Google Play Store</strong>
+          <p>Tap your profile icon in the top right corner of Google Play Store.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Go to Payments &amp; Subscriptions</strong>
+          <p>Tap <strong>Payments &amp; subscriptions</strong> → <strong>Subscriptions</strong>.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Find Food Decoder AI</strong>
+          <p>Tap on the <strong>Food Decoder AI</strong> subscription.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Cancel the Subscription</strong>
+          <p>Tap <strong>Cancel subscription</strong> and follow the confirmation steps. You will keep access to premium features until the end of the current billing period.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="card info">
+      <strong>Recommended order:</strong> (1) Cancel subscription in Google Play → (2) Delete account in the app. This ensures no unexpected charges after account deletion.
+    </div>
+  </div>
+
+  <!-- What's NOT deleted -->
+  <div class="section" id="not-deleted">
+    <h2><span class="icon">ℹ️</span> What Is Not Deleted</h2>
+    <ul>
+      <li><strong>Google Play purchase records:</strong> Google maintains records of transactions made through Google Play for billing and legal purposes. This is governed by Google's Privacy Policy, not ours.</li>
+      <li><strong>Anonymised analytics:</strong> Firebase Analytics data is anonymised and cannot be linked to any individual after account deletion. This aggregate data may be retained for statistical purposes.</li>
+      <li><strong>Legal records:</strong> If required by law (e.g., financial records, legal disputes), we may be required to retain certain data for the legally mandated retention period.</li>
+    </ul>
+  </div>
+
+  <div class="contact-box">
+    <h3>Need Help Deleting Your Account?</h3>
+    <p>If you encounter any issues or cannot access the app, we'll handle your deletion request via email within 72 hours.</p>
+    <a href="mailto:muhammadisrarsaeed@gmail.com?subject=Data Deletion Request">Send Deletion Request</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="data-deletion.html">Data Deletion</a>
+    <a href="support.html">Support</a>
+  </div>
+  &copy; 2025 FoodDecoder AI. All rights reserved.
+</footer>
+
+</body>
+</html>
