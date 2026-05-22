@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Food Decoder AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-icon">🍽️</div>
+      <span>Food Decoder AI</span>
+    </a>
+    <div class="nav-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="data-deletion.html">Data Deletion</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="badge">Legal Document</div>
+  <h1>Privacy Policy</h1>
+  <p>Food Decoder AI is committed to protecting your privacy. This policy explains exactly what data we collect, why, how it is used, and your rights.</p>
+  <div class="last-updated">Last Updated: May 22, 2025 &nbsp;|&nbsp; Effective: May 22, 2025</div>
+</div>
+
+<div class="content">
+
+  <div class="card warning">
+    <strong>Important:</strong> By downloading or using Food Decoder AI, you agree to this Privacy Policy. If you do not agree, please do not use the app. For questions, contact us at <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a>.
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#who-we-are">Who We Are</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Data</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#permissions">App Permissions Explained</a></li>
+      <li><a href="#ai-disclosure">AI &amp; Automated Processing</a></li>
+      <li><a href="#data-storage">Data Storage &amp; Security</a></li>
+      <li><a href="#data-retention">Data Retention</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#your-rights">Your Rights &amp; Choices</a></li>
+      <li><a href="#international">International Transfers</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <div class="section" id="who-we-are">
+    <h2><span class="icon">👤</span> 1. Who We Are</h2>
+    <p><strong>Food Decoder AI</strong> ("we", "our", "us") is the developer of the Food Decoder AI Android application (package ID: <code>com.fooddecoderai.app</code>). We operate as an independent developer.</p>
+    <p><strong>Contact:</strong> <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a></p>
+    <p>This Privacy Policy applies to the Food Decoder AI mobile application available on the Google Play Store and all services offered through it.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section" id="data-collected">
+    <h2><span class="icon">📊</span> 2. Data We Collect</h2>
+
+    <h3>2.1 Account Information (Collected on Sign-Up)</h3>
+    <table>
+      <tr><th>Data Type</th><th>Source</th><th>Purpose</th></tr>
+      <tr><td>Email address</td><td>You provide / Google Sign-In</td><td>Account identification, password reset</td></tr>
+      <tr><td>Display name</td><td>You provide / Google account</td><td>Personalizing your experience</td></tr>
+      <tr><td>Profile photo URL</td><td>Google account (if using Google Sign-In)</td><td>Displaying your avatar in the app</td></tr>
+      <tr><td>Unique User ID (UID)</td><td>Firebase Auth — generated automatically</td><td>Linking your data across sessions</td></tr>
+    </table>
+
+    <h3>2.2 App Usage Data</h3>
+    <table>
+      <tr><th>Data Type</th><th>Stored Where</th><th>Purpose</th></tr>
+      <tr><td>Scanned recipes &amp; results</td><td>Firebase Firestore (cloud) + local device</td><td>History, favourites, offline access</td></tr>
+      <tr><td>Saved favourite recipes</td><td>Firebase Firestore (cloud) + local device</td><td>Cross-device sync of your saved items</td></tr>
+      <tr><td>Scan history (last 50 entries)</td><td>Firebase Firestore (cloud) + local device</td><td>Reviewing past scans</td></tr>
+      <tr><td>Shopping list items</td><td>Local device (Room database)</td><td>Ingredient shopping lists</td></tr>
+      <tr><td>Meal plan entries</td><td>Local device (Room database)</td><td>Weekly meal planning</td></tr>
+      <tr><td>Fridge/Pantry inventory</td><td>Local device (Room database)</td><td>Tracking available ingredients</td></tr>
+    </table>
+
+    <h3>2.3 Preferences &amp; Settings</h3>
+    <table>
+      <tr><th>Data Type</th><th>Stored Where</th></tr>
+      <tr><td>App language preference</td><td>Local device (DataStore)</td></tr>
+      <tr><td>Dietary preferences (e.g. Vegan, Halal)</td><td>Local device (DataStore)</td></tr>
+      <tr><td>Allergy information</td><td>Local device (DataStore)</td></tr>
+      <tr><td>Favourite cuisines</td><td>Local device (DataStore)</td></tr>
+      <tr><td>Theme (light/dark)</td><td>Local device (DataStore)</td></tr>
+    </table>
+
+    <h3>2.4 Food Images</h3>
+    <p>When you scan food using your camera or upload a photo from your gallery, the image is temporarily transmitted to Google's Gemini AI API for food recognition and recipe generation. <strong>We do not permanently store your food photos on our servers.</strong> Images are processed in real-time and are not retained after the analysis is complete.</p>
+
+    <h3>2.5 Technical &amp; Diagnostic Data</h3>
+    <table>
+      <tr><th>Data Type</th><th>Collected By</th><th>Purpose</th></tr>
+      <tr><td>Crash reports &amp; stack traces</td><td>Firebase Crashlytics</td><td>Identifying and fixing bugs</td></tr>
+      <tr><td>App usage analytics (anonymous)</td><td>Firebase Analytics</td><td>Understanding feature usage, improving the app</td></tr>
+      <tr><td>Device type, OS version</td><td>Firebase Analytics</td><td>Compatibility testing</td></tr>
+    </table>
+
+    <h3>2.6 Subscription &amp; Billing Data</h3>
+    <p>Subscription purchases are processed entirely by <strong>Google Play Store</strong>. We do not collect or store your credit card, billing address, or any payment details. We only receive confirmation of your subscription status (active, expired, tier) from Google Play's Billing API to unlock premium features.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section" id="how-we-use">
+    <h2><span class="icon">⚙️</span> 3. How We Use Your Data</h2>
+    <p>We use your data <strong>only</strong> for the following purposes:</p>
+    <ul>
+      <li><strong>Providing the Service:</strong> Generating recipes from food images, syncing your favourites and history across devices, personalizing recipe results based on dietary preferences.</li>
+      <li><strong>Account Management:</strong> Creating and managing your account, sending password reset emails when requested.</li>
+      <li><strong>AI Processing:</strong> Transmitting food images to Google Gemini AI to generate recipe content. This processing happens in real-time and no image data is retained on our servers.</li>
+      <li><strong>Subscription Management:</strong> Verifying your subscription status via Google Play Billing to unlock premium features (increased scan limits).</li>
+      <li><strong>App Improvement:</strong> Using anonymous crash reports and analytics to fix bugs and improve app performance.</li>
+      <li><strong>Notifications:</strong> Sending meal reminder notifications if you enable this feature (local notifications only, we do not use push notifications for marketing).</li>
+    </ul>
+
+    <div class="card success">
+      <strong>We do NOT:</strong>
+      <ul style="margin-top:8px; margin-bottom:0;">
+        <li>Sell your personal data to any third party</li>
+        <li>Use your data for advertising targeting</li>
+        <li>Share your data with third parties for their marketing purposes</li>
+        <li>Store your food photos permanently</li>
+        <li>Access your camera or microphone without your explicit permission</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="section" id="third-parties">
+    <h2><span class="icon">🔗</span> 4. Third-Party Services</h2>
+    <p>Food Decoder AI integrates with the following third-party services. Each has its own privacy policy:</p>
+
+    <table>
+      <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy Policy</th></tr>
+      <tr><td>Firebase Authentication</td><td>Google LLC</td><td>User account management, Google Sign-In</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Firebase Firestore</td><td>Google LLC</td><td>Cloud storage of recipes, history, favourites</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash reporting &amp; diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Firebase Analytics</td><td>Google LLC</td><td>Anonymous usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Google Gemini AI</td><td>Google LLC</td><td>Food recognition &amp; recipe generation from images</td><td><a href="https://ai.google.dev/gemini-api/terms" target="_blank">View</a></td></tr>
+      <tr><td>Google ML Kit</td><td>Google LLC</td><td>On-device food label detection</td><td><a href="https://developers.google.com/ml-kit/terms" target="_blank">View</a></td></tr>
+      <tr><td>Google Play Billing</td><td>Google LLC</td><td>Processing in-app subscription payments</td><td><a href="https://policies.google.com/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Unsplash</td><td>Unsplash Inc.</td><td>Displaying food images in recipe results</td><td><a href="https://unsplash.com/privacy" target="_blank">View</a></td></tr>
+      <tr><td>Pexels</td><td>Canva Pty Ltd</td><td>Displaying food images in recipe results</td><td><a href="https://www.pexels.com/privacy-policy/" target="_blank">View</a></td></tr>
+      <tr><td>Google Fonts</td><td>Google LLC</td><td>App typography</td><td><a href="https://fonts.google.com/about" target="_blank">View</a></td></tr>
+    </table>
+
+    <div class="card info">
+      <strong>Note on AI Processing:</strong> When you scan food, the image is sent to Google's Gemini AI API. This transmission is governed by Google's AI usage policies. We use this solely to generate recipe content and do not share any additional personal information with Google beyond what is necessary for this API call.
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="section" id="permissions">
+    <h2><span class="icon">📱</span> 5. App Permissions Explained</h2>
+    <p>Food Decoder AI requests the following device permissions. All permissions are requested only when needed and used solely for the stated purpose.</p>
+
+    <table>
+      <tr><th>Permission</th><th>Why It's Needed</th><th>Required?</th></tr>
+      <tr><td><strong>CAMERA</strong></td><td>To take photos of food for scanning and recipe generation</td><td>Optional — you can use gallery upload or manual text entry instead</td></tr>
+      <tr><td><strong>READ_MEDIA_IMAGES</strong> (Android 13+) / <strong>READ_EXTERNAL_STORAGE</strong> (older)</td><td>To select food photos from your gallery for scanning</td><td>Optional — only needed for gallery upload feature</td></tr>
+      <tr><td><strong>RECORD_AUDIO</strong></td><td>Voice Chef feature — to speak commands or questions while cooking</td><td>Optional — only needed for Voice Chef</td></tr>
+      <tr><td><strong>INTERNET</strong></td><td>Required to connect to Firebase, Gemini AI API, and image services</td><td>Yes — core functionality requires internet</td></tr>
+      <tr><td><strong>ACCESS_NETWORK_STATE</strong></td><td>To detect if you are offline and show the offline banner</td><td>Yes</td></tr>
+      <tr><td><strong>POST_NOTIFICATIONS</strong> (Android 13+)</td><td>To send meal reminder notifications you schedule in the app</td><td>Optional — only for meal reminders</td></tr>
+      <tr><td><strong>WAKE_LOCK</strong></td><td>To ensure meal reminder notifications fire reliably in the background</td><td>Yes (if reminders are enabled)</td></tr>
+      <tr><td><strong>VIBRATE</strong></td><td>Haptic feedback for interactive elements</td><td>Yes</td></tr>
+    </table>
+    <p>You can revoke any optional permission at any time through your device's Settings → Apps → Food Decoder AI → Permissions.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section" id="ai-disclosure">
+    <h2><span class="icon">🤖</span> 6. AI &amp; Automated Processing</h2>
+
+    <div class="card warning">
+      <strong>AI-Generated Content Disclaimer:</strong> All recipe content, nutritional information, ingredient lists, and cooking instructions provided by Food Decoder AI are <strong>generated by artificial intelligence (Google Gemini AI)</strong>. This content is for informational and entertainment purposes only.
+    </div>
+
+    <h3>How AI Processing Works</h3>
+    <ol>
+      <li>You photograph or describe a food item</li>
+      <li>Our app uses Google ML Kit on your device to detect general food labels (no data leaves device at this step)</li>
+      <li>The image or description is sent to Google Gemini AI via a secure HTTPS API call</li>
+      <li>Gemini AI returns a structured recipe including ingredients, steps, and nutritional estimates</li>
+      <li>The result is displayed in the app and saved to your history</li>
+    </ol>
+
+    <h3>Important AI Limitations</h3>
+    <ul>
+      <li>AI-generated recipes may contain errors, inaccuracies, or may not reflect authentic culinary traditions</li>
+      <li>Nutritional information is estimated and should not be used for medical, dietary, or clinical purposes</li>
+      <li>Allergen warnings are AI-estimated and <strong>not a substitute for reading actual product labels</strong></li>
+      <li>AI food recognition may misidentify dishes, especially complex or regional foods</li>
+    </ul>
+
+    <h3>No Automated Decision-Making</h3>
+    <p>We do not use your data for any automated decision-making that produces legal or similarly significant effects on you. AI processing is used solely to generate recipe content from your food images.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section" id="data-storage">
+    <h2><span class="icon">🔐</span> 7. Data Storage &amp; Security</h2>
+
+    <h3>Where Data is Stored</h3>
+    <ul>
+      <li><strong>Firebase (Google Cloud):</strong> Your account profile, saved recipes, favourites, and scan history are stored on Google's Firebase infrastructure, which uses industry-standard security measures.</li>
+      <li><strong>Your Device:</strong> Preferences, shopping lists, meal plans, and fridge/pantry data are stored locally in an encrypted database on your device.</li>
+      <li><strong>Not Stored:</strong> Food photos you scan are processed in real-time and are not stored on our servers.</li>
+    </ul>
+
+    <h3>Security Measures</h3>
+    <ul>
+      <li>All data in transit is encrypted using TLS/HTTPS — we enforce HTTPS for all network communications and do not permit cleartext traffic</li>
+      <li>Firebase Authentication uses industry-standard OAuth 2.0 and secure token handling</li>
+      <li>Firestore security rules restrict data access so users can only read and write their own data</li>
+      <li>We do not store passwords — authentication is handled entirely by Firebase Auth or Google Sign-In</li>
+      <li>App binaries are signed with a private release key for integrity verification</li>
+    </ul>
+
+    <div class="card info">
+      <strong>Data Backup:</strong> Local device data (shopping lists, meal plans) is excluded from Android cloud backup to prevent unintentional data exposure. Your cloud data (recipes, favourites) is securely synced via Firebase Firestore.
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="section" id="data-retention">
+    <h2><span class="icon">📅</span> 8. Data Retention</h2>
+    <table>
+      <tr><th>Data Type</th><th>Retention Period</th></tr>
+      <tr><td>Account profile (email, name, photo URL)</td><td>Until account is deleted</td></tr>
+      <tr><td>Saved favourites &amp; history</td><td>Until account is deleted or user removes them</td></tr>
+      <tr><td>Food images (for AI processing)</td><td>Not stored — processed in real-time only</td></tr>
+      <tr><td>Crash reports (Firebase Crashlytics)</td><td>90 days (managed by Firebase)</td></tr>
+      <tr><td>Analytics events</td><td>14 months (Google Analytics default)</td></tr>
+      <tr><td>Local device data (shopping, meal plans)</td><td>Until app is uninstalled or account deleted</td></tr>
+      <tr><td>Subscription status</td><td>Managed by Google Play Store</td></tr>
+    </table>
+    <p>When you delete your account, we permanently delete all your data from Firebase Firestore within <strong>30 days</strong> of the deletion request. Local device data is cleared immediately upon account deletion in the app.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="section" id="children">
+    <h2><span class="icon">👶</span> 9. Children's Privacy</h2>
+    <p>Food Decoder AI is <strong>not directed at children under the age of 13</strong>. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a> and we will promptly delete such information.</p>
+    <p>Users between 13–17 years old should use the app only with parental consent. Parents may contact us to request deletion of a minor's data at any time.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="section" id="your-rights">
+    <h2><span class="icon">⚖️</span> 10. Your Rights &amp; Choices</h2>
+
+    <h3>You have the right to:</h3>
+    <table>
+      <tr><th>Right</th><th>How to Exercise It</th></tr>
+      <tr><td><strong>Access</strong> your data</td><td>All your saved recipes, history, and favourites are visible in the app at any time</td></tr>
+      <tr><td><strong>Correct</strong> your data</td><td>Update your name and profile in Settings → Profile</td></tr>
+      <tr><td><strong>Delete</strong> your data</td><td>Settings → Delete Account — permanently removes all your data from our servers. See our <a href="data-deletion.html">Data Deletion page</a>.</td></tr>
+      <tr><td><strong>Export</strong> your data</td><td>Contact us at <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a> to request a copy of your data</td></tr>
+      <tr><td><strong>Opt out of Analytics</strong></td><td>Uninstall the app — Firebase Analytics data is anonymised and cannot be linked back to you individually</td></tr>
+      <tr><td><strong>Revoke permissions</strong></td><td>Device Settings → Apps → Food Decoder AI → Permissions</td></tr>
+      <tr><td><strong>Cancel subscription</strong></td><td>Google Play Store → Subscriptions → Food Decoder AI</td></tr>
+    </table>
+
+    <h3>GDPR (EU/UK Users)</h3>
+    <p>If you are located in the European Union or United Kingdom, you have additional rights under GDPR including the right to restriction of processing, the right to object, and the right to lodge a complaint with your local data protection authority. Our legal basis for processing your data is:</p>
+    <ul>
+      <li><strong>Contract performance:</strong> Processing necessary to provide the service you signed up for</li>
+      <li><strong>Legitimate interests:</strong> Crash reporting and analytics to maintain app quality</li>
+      <li><strong>Consent:</strong> Optional permissions (camera, microphone, notifications)</li>
+    </ul>
+
+    <h3>California (CCPA) Users</h3>
+    <p>California residents have the right to know what personal information is collected, the right to delete personal information, and the right to opt out of the sale of personal information. <strong>We do not sell personal information.</strong> To exercise your rights, contact <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a>.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="section" id="international">
+    <h2><span class="icon">🌍</span> 11. International Data Transfers</h2>
+    <p>Food Decoder AI is operated from Pakistan and uses Google Firebase infrastructure, which may store data on servers located in the United States and other countries. By using the app, you consent to the transfer of your data to these countries, which may have different data protection laws than your country of residence.</p>
+    <p>Google provides appropriate safeguards for international transfers of data under Google's data processing agreements, which comply with applicable data protection laws including EU Standard Contractual Clauses where applicable.</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="section" id="changes">
+    <h2><span class="icon">🔄</span> 12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes, we will:</p>
+    <ul>
+      <li>Update the "Last Updated" date at the top of this page</li>
+      <li>Notify you via an in-app notification on your next app launch</li>
+    </ul>
+    <p>We encourage you to review this Privacy Policy periodically. Continued use of the app after changes are posted constitutes your acceptance of the revised policy.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="section" id="contact">
+    <h2><span class="icon">📧</span> 13. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+    <div class="card">
+      <strong>FoodDecoder AI</strong><br>
+      Email: <a href="mailto:muhammadisrarsaeed@gmail.com">muhammadisrarsaeed@gmail.com</a><br>
+      App: Food Decoder AI (com.fooddecoderai.app)<br>
+      Response time: We aim to respond within <strong>72 hours</strong>
+    </div>
+    <p>For data deletion requests, please also see our dedicated <a href="data-deletion.html">Data Deletion page</a> for step-by-step instructions.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Questions About Your Privacy?</h3>
+    <p>We take your privacy seriously. Reach out anytime.</p>
+    <a href="mailto:muhammadisrarsaeed@gmail.com">Contact Us</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="data-deletion.html">Data Deletion</a>
+    <a href="support.html">Support</a>
+  </div>
+  &copy; 2025 FoodDecoder AI. All rights reserved.
+</footer>
+
+</body>
+</html>
