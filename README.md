@@ -21,4 +21,4 @@ These pages are hosted via **GitHub Pages**. To enable GitHub Pages:
 
 ## Contact
 
-muhammadisrarsaeed@gmail.com
+fooddecoderaiapp@gmail.com
